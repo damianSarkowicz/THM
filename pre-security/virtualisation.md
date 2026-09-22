@@ -12,17 +12,17 @@
 
 ### 2. Lab Machine / VM vs Container
 * **Lab Machine / Virtual Machine (VM):** Cały wirtualny komputer uruchomiony wewnątrz fizycznej maszyny, posiadający własny, osobny system operacyjny.
-* **Container (Kontener):** Mały, odizolowany kontener dla jednej konkretnej aplikacji, który współdzieli ten sam system operacyjny z komputerem fizycznym (hostem).
-* **Container Images (Obrazy Kontenerów):** Gotowy szablon na podstawie którego tworzone są kontenery.
+* **Container (Kontener):** Małe, odizolowane środowisko uruchomieniowe dla aplikacji, które współdzieli kernel (jądro systemu operacyjnego) z hostem.
+* **Container Images:** Gotowy szablon, na podstawie którego tworzone są kontenery.
 
 ### 3. Network Ports (Porty Sieciowe)
 * **Porty:** Numerowane punkty wejścia, z których korzystają aplikacje, aby komunikować się między sobą przez sieć.
 
 ---
 
-## 🚀 Główny Zalety Wirtualizacji (Key Benefits)
+## 🚀 Główne Zalety Wirtualizacji (Key Benefits)
 
-* **Safe testing for cyber security:** Bezpieczne testowanie programów i rozwiązań w odizolowanym środowisku, bez ryzyka dla głównego komputera.
+* **Safe testing for cyber security:** Bezpieczne testowanie programów i rozwiązań w odizolowanym środowisku, ograniczając ryzyko dla głównego systemu.
 * **Cost savings & Better resource usage:** Oszczędność pieniędzy i lepsze wykorzystanie zasobów sprzętowych.
 * **Faster deployment:** Znacznie szybsze i łatwiejsze uruchamianie nowych aplikacji.
 * **Flexibility & Portability:** Duża elastyczność i łatwość przenoszenia gotowych środowisk.
@@ -32,7 +32,7 @@
 
 ## 📌 Podsumowanie w 3 zdaniach
 1. Wirtualizacja pozwala uruchamiać wiele osobnych maszyn (**VM**) na jednym komputerze dzięki oprogramowaniu **Hypervisor**.
-2. **Kontener** to lżejsza alternatywa dla maszyny wirtualnej, służąca do uruchomienia jednej aplikacji i współdzieląca system z hostem.
+2. **Kontener** to lżejsza alternatywa dla maszyny wirtualnej, służąca do uruchamiania aplikacji i współdzieląca **kernel** (jądro systemu operacyjnego) z hostem.
 3. Wirtualizacja zapewnia bezpieczne środowisko testowe (**Safe testing**) i stanowi fundament pod technologię chmurową (**Cloud Computing**).
 
 ### Wirtualizacja i konteneryzacja zapewniają szybki, bezpieczny i spójny sposób na uruchamianie aplikacji.
