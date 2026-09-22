@@ -25,8 +25,8 @@
 ### 4. Protocol (Protokół)
 * **Język komunikacji.** Zbiór reguł, dzięki którym klient i serwer rozumieją się nawzajem.
 * **HTTP vs HTTPS:**
-  * **HTTP:** Przesyła dane otwartym tekstem (Plaintext). Każdy w sieci może podejrzeć zawartość komunikacji.
-  * **HTTPS (HTTP Secure):** Szyfruje ruch za pomocą TLS/SSL, chroniąc poufność i integralność przesyłanych danych.
+  * **HTTP:** Nie zapewnia szyfrowania przesyłanych danych. Komunikacja może być przechwycona i odczytana przez osobę mającą możliwość monitorowania ruchu.
+  * **HTTPS (HTTP Secure):** Zabezpiecza komunikację HTTP za pomocą TLS, zapewniając m.in. poufność i integralność przesyłanych danych.
 
 ### 5. Port (Port sieciowy)
 * **"Drzwi" na serwerze.** Numer od `0` do `65535`, który kieruje ruch do konkretnej usługi.
@@ -38,7 +38,7 @@
 
 ### 6. DNS (Domain Name System)
 * **Książka telefoniczna Internetu.**
-* Zamienia nazwę czytelną dla człowieka (`tryhackme.com`) na adres IP czytelny dla komputera (`104.26.11.229`).
+* Zamienia nazwę czytelną dla człowieka (np. `tryhackme.com`) na adres IP czytelny dla komputera.
 
 ---
 
@@ -49,29 +49,29 @@ Podczas wysyłania zapytania HTTP przeglądarka i narzędzia programistyczne (**
 ### 📊 Podstawowe Pola Żądania i Odpowiedzi
 * **Scheme:** Użyty protokół (`http` lub `https`).
 * **Host:** Nazwa domeny/serwera, do którego wysyłamy zapytanie (np. `httpdemo.local:8080`).
-* **Filename:** Ścieżka do żądanego pliku (np. `/`, co domyślnie oznacza stronę główną `index.html`).
-* **Address:** Adres IP oraz port serwera docelowego (np. `127.0.0.1:8080`).
+* **Filename:** Ścieżka do żądanego zasobu (np. `/`, który może odpowiadać stronie głównej `index.html`).
+* **Remote Address:** Adres IP oraz port serwera, z którym przeglądarka faktycznie się komunikuje (np. `127.0.0.1:8080`).
 * **Status:** Kod wyniku przetworzenia zapytania przez serwer (np. `200 OK`, `404 Not Found`).
 
 ### 📋 Przykładowe Nagłówki (Response Headers)
 * **Content-Type:** Typ zwracanej zawartości (np. `text/html`, `image/png`).
 * **Content-Length:** Rozmiar zwracanej odpowiedzi w bajtach.
-* **Server:** Oprogramowanie i wersja serwera obsługującego żądanie (np. `SimpleHTTP/0.6 Python/3.12.3`).
+* **Server:** Informacja o oprogramowaniu używanym przez serwer (np. `SimpleHTTP/0.6 Python/3.12.3`).
 
 ---
 
 ## ⚙️ Metody HTTP (HTTP Methods / Commands)
 
-Według specyfikacji RFC wyróżniamy **9 głównych metod HTTP**:
+W praktyce i materiałach edukacyjnych często wyróżnia się 9 podstawowych metod HTTP, zdefiniowanych w dokumentach RFC:
 
-* **GET:** Pobieranie/odczytywanie danych z serwera (np. wyświetlenie strony). Parametry przesyłane są bezpośrednio w adresie URL.
+* **GET:** Pobieranie/odczytywanie danych z serwera (np. wyświetlenie strony). Parametry często przekazywane są w adresie URL.
 * **POST:** Przesyłanie nowych danych na serwer (np. formularze logowania, rejestracja).
 * **PUT:** Nadpisywanie lub tworzenie całego zasobu pod wskazanym adresem.
 * **DELETE:** Usuwanie wskazanego zasobu z serwera.
 * **PATCH:** Częściowa modyfikacja zasobu (aktualizacja wybranych pól).
 * **HEAD:** Pobieranie samych nagłówków (Headers) bez treści strony (używane do diagnostyki).
-* **OPTIONS:** Sprawdzanie dostępnych metod i opcji komunikacji ze wskazanym serwerem (CORS).
-* **CONNECT:** Ustanawianie tunelu dwukierunkowego do serwera (np. przy komunikacji przez Proxy).
+* **OPTIONS:** Sprawdzanie dostępnych metod i opcji komunikacji ze wskazanym serwerem.
+* **CONNECT:** Ustanawianie tunelu do wskazanego serwera (np. przy komunikacji przez Proxy).
 * **TRACE:** Odsyłanie otrzymanego żądania z powrotem do klienta (służy do testów diagnostycznych).
 
 ---
