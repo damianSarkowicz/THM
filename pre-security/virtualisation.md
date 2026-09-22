@@ -1,6 +1,6 @@
 # 💻 Virtualisation Basics
 
-> **Quick Summary:** Wprowadzenie do wirtualizacji i konteneryzacji, rola menedżera Hypervisor, kluczowe pojęcia (VM, Kontener, Porty) oraz korzyści z izolacji środowisk w IT i cyberbezpieczeństwie.
+> **Quick Summary:** Wprowadzenie do wirtualizacji i konteneryzacji, rola menedżera Hypervisor, kluczowe pojęcia (VM, Container, Ports) oraz korzyści z izolacji środowisk w IT i cyberbezpieczeństwie.
 
 ---
 
@@ -12,8 +12,8 @@
 
 ### 2. Lab Machine / VM vs Container
 * **Lab Machine / Virtual Machine (VM):** Cały wirtualny komputer uruchomiony wewnątrz fizycznej maszyny, posiadający własny, osobny system operacyjny.
-* **Container (Kontener):** Mały, odizolowany „boks” dla jednej konkretnej aplikacji, który współdzieli ten sam system operacyjny z komputerem fizycznym (hostem).
-* **Container Images (Obrazy Kontenerów):** Gotowy szablon lub „przepis”, na podstawie którego tworzone są kontenery.
+* **Container (Kontener):** Mały, odizolowany kontener dla jednej konkretnej aplikacji, który współdzieli ten sam system operacyjny z komputerem fizycznym (hostem).
+* **Container Images (Obrazy Kontenerów):** Gotowy szablon na podstawie którego tworzone są kontenery.
 
 ### 3. Network Ports (Porty Sieciowe)
 * **Porty:** Numerowane punkty wejścia, z których korzystają aplikacje, aby komunikować się między sobą przez sieć.
@@ -35,4 +35,4 @@
 2. **Kontener** to lżejsza alternatywa dla maszyny wirtualnej, służąca do uruchomienia jednej aplikacji i współdzieląca system z hostem.
 3. Wirtualizacja zapewnia bezpieczne środowisko testowe (**Safe testing**) i stanowi fundament pod technologię chmurową (**Cloud Computing**).
 
-Wirtualizacja i konteneryzacja zapewniają szybki, bezpieczny i spójny sposób na uruchamianie aplikacji.
+### Wirtualizacja i konteneryzacja zapewniają szybki, bezpieczny i spójny sposób na uruchamianie aplikacji.
