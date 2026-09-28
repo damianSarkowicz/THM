@@ -9,6 +9,8 @@
 ### 1. Virtualization & Hypervisor
 * **Virtualization (Wirtualizacja):** Technologia, która pozwala jednemu fizycznemu komputerowi działać tak, jakby był wieloma osobnymi komputerami.
 * **Hypervisor:** Oprogramowanie zarządcze („menedżer”), które tworzy i uruchamia maszyny wirtualne na fizycznym sprzęcie.
+    * **Type 1 (Bare-Metal):** Działa bezpośrednio na fizycznym sprzęcie (bezpośrednio na „gołym metalu”, bez pośrednictwa systemu operacyjnego). Zapewnia najwyższą wydajność i bezpieczeństwo; stosowany w serwerowniach i chmurze (np. VMware ESXi, Proxmox, Hyper-V).
+    * **Type 2 (Hosted):** Działa jako aplikacja zainstalowana na istniejącym systemie operacyjnym gospodarza (np. Windows, Linux). Łatwiejszy w konfiguracji; idealny do lokalnych testów i labów (np. VirtualBox, VMware Workstation).
 
 ### 2. Lab Machine / VM vs Container
 * **Lab Machine / Virtual Machine (VM):** Cały wirtualny komputer uruchomiony wewnątrz fizycznej maszyny, posiadający własny, osobny system operacyjny.
@@ -31,7 +33,7 @@
 ---
 
 ## 📌 Podsumowanie w 3 zdaniach
-1. Wirtualizacja pozwala uruchamiać wiele osobnych maszyn (**VM**) na jednym komputerze dzięki oprogramowaniu **Hypervisor**.
+1. Wirtualizacja pozwala uruchamiać wiele osobnych maszyn (**VM**) na jednym komputerze dzięki oprogramowaniu **Hypervisor** (działającemu bezpośrednio na sprzęcie - **Type 1**, lub w systemie operacyjnym - **Type 2**).
 2. **Kontener** to lżejsza alternatywa dla maszyny wirtualnej, służąca do uruchamiania aplikacji i współdzieląca **kernel** (jądro systemu operacyjnego) z hostem.
 3. Wirtualizacja zapewnia bezpieczne środowisko testowe (**Safe testing**) i stanowi fundament pod technologię chmurową (**Cloud Computing**).
 
