@@ -60,6 +60,6 @@ Różne urządzenia i środowiska wymagają odmiennych funkcji od systemu operac
 ## 📌 Podsumowanie w 3 zdaniach
 1. System operacyjny (OS) zarządza sprzętem, pamięcią, plikami oraz użytkownikami, pośrednicząc między fizyczną maszyną a aplikacjami.
 2. Podział na **Kernel Space** (wysokie uprawnienia) i **User Space** (izolacja aplikacji) oraz mechanizmy kontroli dostępu zapewniają stabilność i bezpieczeństwo całego systemu.
-3. Różnorodność systemów — od desktopowych (**Windows**, **Linux**), przez serwerowe i chmurowe, po zoptymalizowane pod kontenery (**Alpine**, **Bottlerocket**) — wynika z odmiennych wymagań sprzętowych i środowiskowych.
+3. Różnorodność systemów - od desktopowych (**Windows**, **Linux**), przez serwerowe i chmurowe, po zoptymalizowane pod kontenery (**Alpine**, **Bottlerocket**) - wynika z odmiennych wymagań sprzętowych i środowiskowych.
 
 ### System operacyjny stanowi kluczowy fundament zarządzania zasobami i bezpieczeństwem w każdym środowisku IT.
